@@ -3,7 +3,7 @@ Project team:
 > Jelco Elich, [Jori] Kos, Melissa Mondeel, [Tasso] Mevissen, [Waine] Van Der Biezen, Wiebe Klazes, Yulan Wintgen
 
 Platform:
-[jullie platfom]
+[Unity]
 
 ### Korte omschrijving van de game
 In de game moet je zoveel mogelijke planten verzamelen en planten om potions te maken, die je dan weer aan de goden kunt gaan verkopen
