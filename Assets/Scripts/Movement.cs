@@ -49,12 +49,12 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            player.transform.Translate(Vector3.left * speed * Time.deltaTime);
+            player.transform.Rotate(0.0f, -90.0f * Time.deltaTime, 0.0f, Space.Self);
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            player.transform.Translate(Vector3.right * speed * Time.deltaTime);
+            player.transform.Rotate(0.0f, 90.0f * Time.deltaTime, 0.0f, Space.Self);
         }
         
     }
