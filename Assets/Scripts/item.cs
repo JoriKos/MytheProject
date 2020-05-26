@@ -6,5 +6,4 @@ public abstract class Item : MonoBehaviour
 {
 	abstract public void AddItemToPlayerInventory();
 	abstract public void InitializePlayerInventory();
-
 }
