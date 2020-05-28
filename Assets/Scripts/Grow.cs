@@ -20,7 +20,7 @@ public class Grow : MonoBehaviour
         childs = transform.GetComponentsInChildren<Transform>();
         for (int i = 0; i < childs.Length; i++)
         {
-            childs[i].gameObject.SetActive(false); 
+            childs[i].gameObject.SetActive(false);
         }
         childs[0].gameObject.SetActive(true);
         StartCoroutine(grow());
@@ -33,28 +33,21 @@ public class Grow : MonoBehaviour
         yield return new WaitForSeconds(growthInterval);
         for (int i = 1; i < childs.Length; i++)
         {
-            transform.GetChild(i-1).gameObject.SetActive(false);
+            transform.GetChild(i - 1).gameObject.SetActive(false);
             transform.GetChild(i).gameObject.SetActive(true);
 
             yield return new WaitForSeconds(growthInterval);
         }
         /*
         yield return new WaitForSeconds(5);
-
         transform.GetChild(0).gameObject.SetActive(false);
         transform.GetChild(1).gameObject.SetActive(true);
-
         yield return new WaitForSeconds(5);
-
         transform.GetChild(1).gameObject.SetActive(false);
         transform.GetChild(2).gameObject.SetActive(true);
-
         yield return new WaitForSeconds(5);
-
         transform.GetChild(2).gameObject.SetActive(false);
         transform.GetChild(3).gameObject.SetActive(true);
-
-
         StopCoroutine(grow());
         */
 
