@@ -5,7 +5,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private float speed = 10f;
-    private float jumpHeight = 5;
+    private float jumpHeight = 5f;
     private bool canJump = false;
     private bool isGrounded = true;
     private GameObject player;
@@ -23,18 +23,17 @@ public class Movement : MonoBehaviour
         rb = player.GetComponent<Rigidbody>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (canJump)
         {
             canJump = false;
-            player.transform.Translate(jumpTarget.transform.position * jumpHeight * Time.deltaTime);
+            rb.AddForce(0, jumpHeight, 0, ForceMode.Impulse);
         }
-        else
-        {
-            rb.AddForce((planetRB.position - transform.position).normalized * speed);
-        }
+    }
 
+    private void Update()
+    {
         if (isGrounded)
         {
             if (Input.GetKeyUp(KeyCode.Space))
