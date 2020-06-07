@@ -5,14 +5,18 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private float speed = 10f;
-    private float jumpHeight = 5;
+    private float jumpHeight = 5f;
     private bool canJump = false;
     private bool isGrounded = true;
     private GameObject player;
     private Rigidbody rb;
+    private Rigidbody planetRB;
+    private Transform jumpTarget;
 
     private void Awake()
     {
+        jumpTarget = GameObject.Find("JumpTarget").GetComponent<Transform>();
+        planetRB = GameObject.Find("Planet").GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
         isGrounded = true;
         canJump = false;
@@ -37,6 +41,7 @@ public class Movement : MonoBehaviour
                 canJump = true;
             }
         }
+
         if (Input.GetKey(KeyCode.W))
         {
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
