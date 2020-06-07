@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneSwitch : MonoBehaviour
+public class LoadScene : MonoBehaviour
 {
-     void OnTriggerEnter(Collider other)
+    public void LoaSceneLoader(int SceneIndex)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneIndex);
     }
+
 
 
 }
