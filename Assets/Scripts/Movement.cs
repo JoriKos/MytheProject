@@ -13,6 +13,13 @@ public class Movement : MonoBehaviour
     private Rigidbody planetRB;
     private Transform jumpTarget;
 
+    private Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
+
     private void Awake()
     {
         jumpTarget = GameObject.Find("JumpTarget").GetComponent<Transform>();
@@ -44,7 +51,12 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
+            anim.SetBool("walking", true);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        }
+        else
+        {
+            anim.SetBool("walking", false);
         }
 
         if (Input.GetKey(KeyCode.S))
