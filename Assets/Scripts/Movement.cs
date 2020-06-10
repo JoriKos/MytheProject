@@ -11,7 +11,12 @@ public class Movement : MonoBehaviour
     //private bool isGrounded = true;
     //private Rigidbody rb;
     //private Rigidbody groundRB;
-    private Animator anim;
+    public Animator anim;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Awake()
     {
@@ -44,30 +49,32 @@ public class Movement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W))
         {
-           //anim.SetBool("walking", true);
+           anim.SetBool("Walking", true);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
-        /* else
+        else
         {
-            anim.SetBool("walking", false);
+            anim.SetBool("Walking", false);
         }
-        */
 
-        if (Input.GetKey(KeyCode.S))
-        {
-            player.transform.Translate(Vector3.back * speed * Time.deltaTime);
-        }
+
+        /*if (Input.GetKey(KeyCode.S))
+       {
+           player.transform.Translate(Vector3.back * speed * Time.deltaTime);
+       }*/
 
         if (Input.GetKey(KeyCode.A))
-        {
-            player.transform.Rotate(0.0f, -90.0f * Time.deltaTime, 0.0f, Space.Self);
-        }
+       {
+           player.transform.Rotate(0.0f, -90.0f * Time.deltaTime, 0.0f, Space.Self);
+       }
 
-        if (Input.GetKey(KeyCode.D))
-        {
-            player.transform.Rotate(0.0f, 90.0f * Time.deltaTime, 0.0f, Space.Self);
-        }
-        
+       if (Input.GetKey(KeyCode.D))
+       {
+           player.transform.Rotate(0.0f, 90.0f * Time.deltaTime, 0.0f, Space.Self);
+       }
+       
+
+
     }
     /*
     private void OnCollisionEnter(Collision other)
