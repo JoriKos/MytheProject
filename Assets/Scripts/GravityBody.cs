@@ -15,7 +15,7 @@ public class GravityBody : MonoBehaviour
         rb.constraints = RigidbodyConstraints.FreezeRotation;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         planet.Attract(this.transform);
     }

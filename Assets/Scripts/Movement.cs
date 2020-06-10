@@ -5,59 +5,53 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private float speed = 10f;
-    private float jumpHeight = 5f;
-    private bool canJump = false;
-    private bool isGrounded = true;
+    //private float jumpHeight = 5f;
+    //private bool canJump = false;
     private GameObject player;
-    private Rigidbody rb;
-    private Rigidbody planetRB;
-    private Transform jumpTarget;
-
+    //private bool isGrounded = true;
+    //private Rigidbody rb;
+    //private Rigidbody groundRB;
     private Animator anim;
-
-    private void Start()
-    {
-        anim = GetComponentInChildren<Animator>();
-    }
 
     private void Awake()
     {
-        jumpTarget = GameObject.Find("JumpTarget").GetComponent<Transform>();
-        planetRB = GameObject.Find("Planet").GetComponent<Rigidbody>();
+        anim = GetComponentInChildren<Animator>();
+       //groundRB = GameObject.Find("Planet").GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
-        isGrounded = true;
-        canJump = false;
-        rb = player.GetComponent<Rigidbody>();
+        //isGrounded = true;
+        //canJump = false;
+        //rb = this.GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    /*private void FixedUpdate()
     {
         if (canJump)
         {
             canJump = false;
-            rb.AddForce(0, jumpHeight, 0, ForceMode.Impulse);
+            rb.AddForce(0, 5, 0, ForceMode.Impulse);
         }
-    }
+    }*/
 
     private void Update()
     {
-        if (isGrounded)
+        /*if (isGrounded)
         {
             if (Input.GetKeyUp(KeyCode.Space))
             {
-                canJump = true;
+                rb.AddForce(0, 5, 0, ForceMode.Impulse);
             }
-        }
+        }*/
 
         if (Input.GetKey(KeyCode.W))
         {
-            anim.SetBool("walking", true);
+           //anim.SetBool("walking", true);
             player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
-        else
+        /* else
         {
             anim.SetBool("walking", false);
         }
+        */
 
         if (Input.GetKey(KeyCode.S))
         {
@@ -75,9 +69,10 @@ public class Movement : MonoBehaviour
         }
         
     }
-
+    /*
     private void OnCollisionEnter(Collision other)
     {
+       
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = true;
@@ -90,4 +85,5 @@ public class Movement : MonoBehaviour
             isGrounded = false;
         }
     }
+    */
 }
