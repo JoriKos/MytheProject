@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private bool isInitialized = false;
+    public bool isInitialized { get; private set; }
 
     Dictionary<ItemTypes, int> playerInventory = new Dictionary<ItemTypes, int>();
 
@@ -45,5 +45,15 @@ public class PlayerInventory : MonoBehaviour
             Debug.Log("Key: " + items.Key + " Value:"+ items.Value + "\n");
         }
     }
+    public string GetItemAmountFromInventory(ItemTypes item)
+    {
+       string amount = playerInventory[item].ToString();
+        return amount;
+    }
+    public int GetIntAmountFromInventory(ItemTypes item)
+	{
+        int amount = playerInventory[item];
+        return amount;
+	}
 }
 

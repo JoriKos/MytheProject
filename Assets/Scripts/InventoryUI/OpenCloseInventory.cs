@@ -10,10 +10,17 @@ public class OpenCloseInventory : MonoBehaviour
         get { return inventoryIsOpen;}
         set { inventoryIsOpen = value;}
     }
+
     [SerializeField] private GameObject inventoryMenu;
 
-    // Update is called once per frame
-    void Update()
+    PlayerInventory playerInv;
+
+	private void Start()
+	{
+       playerInv = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInventory>();
+	}
+	// Update is called once per frame
+	void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -29,8 +36,13 @@ public class OpenCloseInventory : MonoBehaviour
 
     private void OpenInventoryMenu()
     {
+            if (playerInv.GetInitialization() == true)
+		{
         inventoryMenu.SetActive(true);
         inventoryIsOpen = true;
+		}
+            else if (playerInv.GetInitialization() == false)
+            playerInv.InitializeInventory();
     }
 
     private void CloseInventoryMenu()
