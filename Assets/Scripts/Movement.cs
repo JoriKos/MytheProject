@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float speed = 80f;
-    private float turnSpeed = 100f;
+    [SerializeField] private float speed;
+    [SerializeField] private float turnSpeed;
     //private float jumpHeight = 5f;
     //private bool canJump = false;
     private GameObject player;
@@ -43,17 +43,16 @@ public class Movement : MonoBehaviour
             }
         }*/
 
-        if (Input.GetKey(KeyCode.W))
-        {
+       if (Input.GetKey(KeyCode.W))
+       {
            anim.SetBool("Walking", true);
-            player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-        }
-        else
-        {
-            anim.SetBool("Walking", false);
-        }
-
-
+           player.transform.Translate(Vector3.forward * speed * Time.deltaTime);
+       }
+       else
+       {
+           anim.SetBool("Walking", false);
+       }
+        
        if (Input.GetKey(KeyCode.S))
        {
            player.transform.Translate(Vector3.back * speed * Time.deltaTime);
