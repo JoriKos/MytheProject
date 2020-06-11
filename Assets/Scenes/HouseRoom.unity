@@ -2760,7 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fed3ae0ba8fee74f83739dd56cbae2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 880330437}
 --- !u!114 &990503062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3969,6 +3969,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270480839953342999, guid: 32f00844419a55640a46365f87bcd904,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270480839953342999, guid: 32f00844419a55640a46365f87bcd904,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7626523318527758423, guid: 32f00844419a55640a46365f87bcd904,
         type: 3}

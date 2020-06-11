@@ -1636,9 +1636,11 @@ GameObject:
   - component: {fileID: 1712496901380422428}
   - component: {fileID: 1712496901380422427}
   - component: {fileID: 1712496901380422503}
-  m_Layer: 0
+  - component: {fileID: 6856381117379378318}
+  - component: {fileID: 7964277482277491105}
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1707,6 +1709,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15bf6f747d1f2e049b45cc48236807e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  turnSpeed: 0
 --- !u!114 &1712496901380422427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1729,6 +1733,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ace1298d44358fe4ea22a93d4f410ff8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6856381117379378318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270480839953342999}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02946289, y: 0.053851623, z: 0.025500841}
+  m_Center: {x: 0.00054911297, y: 0.024872182, z: -0.0012232956}
+--- !u!114 &7964277482277491105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7270480839953342999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee347754561cdb49ab71991a1d8bc28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7345677080951588412

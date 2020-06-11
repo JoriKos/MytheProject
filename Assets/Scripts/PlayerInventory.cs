@@ -55,5 +55,9 @@ public class PlayerInventory : MonoBehaviour
         int amount = playerInventory[item];
         return amount;
 	}
+	private void Awake()
+	{
+        InitializeInventory();
+	}
 }
 

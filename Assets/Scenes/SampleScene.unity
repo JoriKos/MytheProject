@@ -3354,7 +3354,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688807622}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.023151817, y: 0.05030884, z: 0.0312835}
@@ -8377,8 +8377,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.829264, y: 3.4868438, z: 1.4481155}
+  m_Center: {x: -0.77748746, y: 2.566469, z: -0.22405744}
 --- !u!1 &1870318077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 58946ab0054319643b7725c448f6cb76,
@@ -8738,6 +8738,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1712496901380422428, guid: 32f00844419a55640a46365f87bcd904,
+        type: 3}
+      propertyPath: speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712496901380422428, guid: 32f00844419a55640a46365f87bcd904,
+        type: 3}
+      propertyPath: turnSpeed
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5962403159273181188, guid: 32f00844419a55640a46365f87bcd904,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8802,6 +8812,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7270480839953342999, guid: 32f00844419a55640a46365f87bcd904,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32f00844419a55640a46365f87bcd904, type: 3}
