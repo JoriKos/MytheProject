@@ -4,25 +4,21 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    private float speed = 10f;
+    private float speed = 80f;
+    private float turnSpeed = 100f;
     //private float jumpHeight = 5f;
     //private bool canJump = false;
     private GameObject player;
     //private bool isGrounded = true;
     //private Rigidbody rb;
     //private Rigidbody groundRB;
-    public Animator anim;
-
-    private void Start()
-    {
-        anim = GetComponent<Animator>();
-    }
+    private Animator anim;
 
     private void Awake()
     {
-        anim = GetComponentInChildren<Animator>();
-       //groundRB = GameObject.Find("Planet").GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
+        //groundRB = GameObject.Find("Planet").GetComponent<Rigidbody>();
         //isGrounded = true;
         //canJump = false;
         //rb = this.GetComponent<Rigidbody>();
@@ -58,19 +54,19 @@ public class Movement : MonoBehaviour
         }
 
 
-        /*if (Input.GetKey(KeyCode.S))
+       if (Input.GetKey(KeyCode.S))
        {
            player.transform.Translate(Vector3.back * speed * Time.deltaTime);
-       }*/
+       }
 
-        if (Input.GetKey(KeyCode.A))
+       if (Input.GetKey(KeyCode.A))
        {
-           player.transform.Rotate(0.0f, -90.0f * Time.deltaTime, 0.0f, Space.Self);
+           player.transform.Rotate(0.0f, -turnSpeed * Time.deltaTime, 0.0f, Space.Self);
        }
 
        if (Input.GetKey(KeyCode.D))
        {
-           player.transform.Rotate(0.0f, 90.0f * Time.deltaTime, 0.0f, Space.Self);
+           player.transform.Rotate(0.0f, turnSpeed * Time.deltaTime, 0.0f, Space.Self);
        }
        
 
