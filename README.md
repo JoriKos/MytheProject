@@ -44,7 +44,7 @@ In de game moet je zoveel mogelijke planten verzamelen en planten om potions te 
    [RetrospectiveVerslagen]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
    [ReviewVerslagen]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
    [Prototype]: <https://drive.google.com/drive/folders/1_r5eOqhBKz5HgnTa88_93UXId_kDDkS6?usp=sharing>
-   [Folder op teams]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
+   [Folder op teams]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FOpnames%20standup&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
    [AssetPlanning]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
    [Jori]: <https://github.com/JoriKos>
    [Tasso]: <https://github.com/tasso-tech>
