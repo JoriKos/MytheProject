@@ -40,12 +40,12 @@ In de game moet je zoveel mogelijke planten verzamelen en planten om potions te 
 
    [Backlog]: <https://trello.com/b/Xlu82FjK/werkprocess-1>
    [Logboek]: <https://mediacollegeamsterdam.sharepoint.com/:w:/r/teams/MytheGDGA1920-Team04/_layouts/15/Doc.aspx?sourcedoc=%7BF99DEFEC-7708-45B2-8DDD-1E71210FF928%7D&file=logboek%20mythe%20beta.docx&action=default&mobileredirect=true>
-   [GameDesignDoc]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/GameDesignDoc.pdf>
-   [RetrospectiveVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/RetrospectiveVerslagen.pdf>
-   [ReviewVerslagen]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/ReviewVerslagen.pdf>
-   [Prototype]: <https://www.mijnmytheprototype.nl>
-   [Folder op teams]: <https://www.linknaarmijnfolderopteams.nl>
-   [AssetPlanning]: <https://github.com/BerendWeij/agp_inlever_template/blob/master/producten/AssetPlanning.pdf>
+   [GameDesignDoc]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
+   [RetrospectiveVerslagen]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
+   [ReviewVerslagen]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
+   [Prototype]: <https://drive.google.com/drive/folders/1_r5eOqhBKz5HgnTa88_93UXId_kDDkS6?usp=sharing>
+   [Folder op teams]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
+   [AssetPlanning]: <https://mediacollegeamsterdam.sharepoint.com/teams/MytheGDGA1920-Team04/Gedeelde%20documenten/Forms/AllItems.aspx?RootFolder=%2Fteams%2FMytheGDGA1920%2DTeam04%2FGedeelde%20documenten%2FTeam%2004%2FDocumentatie&FolderCTID=0x0120002CBA28AB0A8BDC43B9C8A47DCD052914>
    [Jori]: <https://github.com/JoriKos>
    [Tasso]: <https://github.com/tasso-tech>
    [Waine]: <https://github.com/WoolfyDuh>
