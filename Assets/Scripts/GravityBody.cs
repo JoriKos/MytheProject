@@ -17,6 +17,6 @@ public class GravityBody : MonoBehaviour
 
     private void Update()
     {
-        planet.Attract(this.transform);
+        planet.Attract(this.transform, rb);
     }
 }
