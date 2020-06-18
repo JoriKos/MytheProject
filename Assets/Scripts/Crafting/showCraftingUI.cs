@@ -1,7 +1,7 @@
 ﻿using UnityEditor.UIElements;
 using UnityEngine;
 
-public class showCraftingUI : MonoBehaviour
+public class ShowCraftingUI : MonoBehaviour
 {
     bool wasInteracted { get; set; }
     bool displayingCraftingUI { get; set; }
@@ -24,9 +24,9 @@ public class showCraftingUI : MonoBehaviour
 		{
 			if (wasInteracted)
 			{
-            interactableDisplay.SetActive(false);
-            craftingUI.SetActive(true);
-            displayingCraftingUI = true;
+             interactableDisplay.SetActive(false);
+             craftingUI.SetActive(true);
+             displayingCraftingUI = true;
 			}
 		}
 		if (Input.GetKeyDown(KeyCode.Escape))
